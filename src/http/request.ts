@@ -3,7 +3,7 @@ import config from '../config';
 
 const http = axios.create({
   baseURL:
-    process.env.NODE_ENV === 'development' ? config.url : config.urlOnLine,
+    process.env.NODE_ENV === 'development' ? config.deafultUrl.url : config.deafultUrl.urlOnLine,
   timeout: 60000, // 请求超时时间
 });
 

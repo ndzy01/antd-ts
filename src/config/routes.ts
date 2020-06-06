@@ -9,7 +9,7 @@ let routes: IRouteItem[] = [
   /* -------------------------------------------- */
 
   {
-    path: '/demo1',
+    path: '/demo01',
     view: 'layout/demo01-show',
   },
 ];

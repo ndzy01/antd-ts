@@ -1,19 +1,16 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { createHashHistory } from 'history'
+const history = createHashHistory()
 export default function Home() {
   return (
     <div>
       <ul>
         <li>
-          <NavLink
-            to="/demo01"
-            activeStyle={{
-              textDecoration: 'none',
-              color: 'black',
-            }}
-          >
-            demo01
-          </NavLink>
+          <button onClick={
+            () => {
+              history.push('/demo01')
+            }
+          }> demo01</button>
         </li>
       </ul>
     </div>

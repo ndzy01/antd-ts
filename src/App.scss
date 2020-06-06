@@ -11,7 +11,7 @@
     // 代码作用 使子元素 水平垂直居中
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
   }
 
   &-body {
@@ -19,13 +19,19 @@
     background-color: #108ee9;
     flex: auto;
     display: flex;
-    aside {
+    &-aside-expend{
       padding: 5px;
       flex: none;
       width: 200px;
       background-color: #3ba0e9;
       overflow-y: auto;
     }
+    &-aside-collapse{
+      flex: none;
+      width: 0px;
+   
+    }
+ 
     &-main {
       min-height: 300px;
       flex: auto;
