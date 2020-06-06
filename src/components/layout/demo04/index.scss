@@ -1,0 +1,57 @@
+.demo04 {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  &-header {
+    flex: 0 0 50px;
+
+    background-color: #fdf6e3;
+  }
+  &-footer {
+    flex: 0 0 50px;
+    background-color: #323232;
+    color: #ffffff;
+  }
+  &-main {
+    flex: 1 0 auto;
+    background-color: #ffffff;
+    display: flex;
+    /*轴向默认为横, 其实这里可以不写*/
+    flex-direction: row;
+    &-left {
+      flex: 0 0 200px;
+      background-color: #509839;
+    }
+    &-right {
+      flex: 0 0 200px;
+      background-color: #823384;
+    }
+
+    &-center {
+      flex: 1 0 calc(100% - 400px);
+      /*换行，第一行在上方*/
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .demo04 {
+    &-main {
+      flex-direction: column;
+      &-left {
+        flex: 1 0 auto;
+        order: 1;
+      }
+      &-right {
+        flex: 1 0 auto;
+        order: 1;
+      }
+
+      &-center {
+        flex: 2 0 auto;
+      }
+    }
+  }
+}

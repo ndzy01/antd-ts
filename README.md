@@ -28,3 +28,6 @@ yarn add node-sass
 ```
 
 yarn add axios
+
+npm install react-router-dom @/types/react-router-dom -S
+npm install react-router 
